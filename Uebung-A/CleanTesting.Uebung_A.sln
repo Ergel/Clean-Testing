@@ -7,11 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Business.Authe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Test.Business.AuthenticationServices", "Giraffenpark.Test.Business.AuthenticationServices\Giraffenpark.Test.Business.AuthenticationServices.csproj", "{A4C9F345-C2A7-4D79-AD50-A861203970EF}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Datenbank-Skripte", "Datenbank-Skripte", "{C79746CC-43E7-4630-B6B2-F1E659B916DA}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\..\..\..\Entwicklung\Datenbanken\AuthenticationBase.bak = ..\..\..\..\..\..\Entwicklung\Datenbanken\AuthenticationBase.bak
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8754EADF-79D1-4365-886C-B9599AFA71A6}"
 	ProjectSection(SolutionItems) = preProject
 		Aufgabenbeschreibung_Uebung_A.txt = Aufgabenbeschreibung_Uebung_A.txt

@@ -2,7 +2,8 @@ Aufgabenbeschreibung:
 
 Du sollst ein Authentifizierungs-Backend umsetzen. Diese soll aus ein Speichermedium bestehen und APIs zur Verfügung stellen, 
 die folgendes ermöglichen sollen:
-	- Registrierung eines Benutzers
+	- Registrierung eines Benutzers.
+			Akzeptanzkriterien: Die Menschen, die "Özgür" heißen dürfen nicht registriert werden.
 	- Anmelden eines registrierten Benutzers mit Benutzername und Passwort.
 
 Dabei sind folgende zu beachten:
