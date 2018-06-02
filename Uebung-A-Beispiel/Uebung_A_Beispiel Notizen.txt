@@ -1,0 +1,19 @@
+
+Diese Prinzipien wurden absichtlich verletzt:
+Isolierung der Methoden - Wiederholbarkeit von Tests - Die Tests müssen unabhängig von einander ausführbar sein.
+Ignore Technik der Persistence - diese ist nur eine technische Detail - DRY - Testdublikaten müssen eliminiert werden
+Logik für das Erzeugen von Testdaten von der TestSuite trennen (Seperations of Concerns)
+Relay on Abstraction not on Details
+Lass das System am Ende wie am Anfang Teste die Spezifikation - Hole Hilfe von PO oder QS'ler um realistische Testdaten zu haben und realistische Erwartungen,
+die zu verifizieren sind.
+
+Penetration Tests ->Ändere Code und lass die Tests laufen. Muss mindestens eine ROT werden!
+Fokus auf Fachlichkeit - Testing auf Macro-Ebene (Business Driven Testing)
+Verifiziere alle Erwartungen eines Verhaltens
+Refactoringen dürfen Test-syntax und semantik nicht beeinflußen.
+Negative Beispiele- Grenzwerte testen
+Möglichst als BlackBox
+Private Methoden nicht testen. Testen der Methoden per Reflection bitte tue das nicht.
+Code Abdeckung kann sehr schnell täuschen
+Never passe deinen Code, nur damit der Test so grün werden kann. Oder umgekehrt.
+Test müssen beschreiben, was die Anforderungen sind.
