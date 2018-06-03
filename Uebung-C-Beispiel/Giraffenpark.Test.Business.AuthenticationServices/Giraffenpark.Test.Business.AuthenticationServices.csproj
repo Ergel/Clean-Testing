@@ -65,13 +65,17 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Giraffenpark Clean-B\Giraffenpark.Authentication.Domain\Giraffenpark.Authentication.Domain.csproj">
+      <Project>{37a9c4e7-1819-4649-95db-3cc73dc457a1}</Project>
+      <Name>Giraffenpark.Authentication.Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Giraffenpark.Business.AuthenticationServices\Giraffenpark.Business.AuthenticationServices.csproj">
       <Project>{5b171f18-6ffb-4324-9c93-df1f7de31d9d}</Project>
       <Name>Giraffenpark.Business.AuthenticationServices</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Giraffenpark.Business.DataServices\Giraffenpark.Business.DataServices.csproj">
+    <ProjectReference Include="..\Giraffenpark.Business.DataServices\Giraffenpark.Infrastructure.AuthenticationServices.Sql.csproj">
       <Project>{CA302152-6F32-424D-8A7F-679CE3664293}</Project>
-      <Name>Giraffenpark.Business.DataServices</Name>
+      <Name>Giraffenpark.Infrastructure.AuthenticationServices.Sql</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

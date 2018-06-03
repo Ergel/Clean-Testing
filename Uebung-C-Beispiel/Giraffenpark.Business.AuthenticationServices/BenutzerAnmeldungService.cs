@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Giraffenpark.Authentication.Domain;
 using Giraffenpark.Business.DataServices;
 
 namespace Giraffenpark.Business.AuthenticationServices

@@ -1,6 +1,8 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure.Annotations;
+using System.Data.Entity.ModelConfiguration.Conventions;
+using Giraffenpark.Authentication.Domain;
 
 namespace Giraffenpark.Business.DataServices
 {
@@ -15,9 +17,7 @@ namespace Giraffenpark.Business.DataServices
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Benutzer>()
-                .Property(e => e.Passwort)
-                .IsFixedLength();
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
         }
     }
 }

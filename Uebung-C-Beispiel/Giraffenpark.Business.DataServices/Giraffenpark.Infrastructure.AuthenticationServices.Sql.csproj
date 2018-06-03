@@ -50,12 +50,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AuthenticationDatenModel.cs" />
-    <Compile Include="Benutzer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Giraffenpark Clean-B\Giraffenpark.Authentication.Domain\Giraffenpark.Authentication.Domain.csproj">
+      <Project>{37a9c4e7-1819-4649-95db-3cc73dc457a1}</Project>
+      <Name>Giraffenpark.Authentication.Domain</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

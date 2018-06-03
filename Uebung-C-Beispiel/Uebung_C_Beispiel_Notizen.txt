@@ -1,10 +1,3 @@
 Aufgabenbeschreibung:
 
-Du sollst die Datenzugriffschicht abstrahieren, damit du in Zukunft auf einen anderen Speichermeidum 
-mit einer anderen Persistence-Technik speichern kannst.
-
-Dabei sind folgende zu beachten:
-	- Das Verhalten der APIs ändern sich nicht.
-	- Business Klasse bzw. Entity-Klasse "Benutzer" wird Persistence-Ignorant redesigned.
-	- Empfehlung: Code First Ansatz von Entity Framework kann dir helfen. https://msdn.microsoft.com/en-us/library/jj193542(v=vs.113).aspx
-	- Orientiere dich bitte nach IDomainObjectRepository, wenn du eine konkrete Datenzugriffschicht implementierst.
+EF Modell =>Erzeuge DB-Tabelle erneut.
