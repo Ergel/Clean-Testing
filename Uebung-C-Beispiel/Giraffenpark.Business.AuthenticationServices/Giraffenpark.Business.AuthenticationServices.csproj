@@ -58,10 +58,6 @@
       <Project>{37A9C4E7-1819-4649-95DB-3CC73DC457A1}</Project>
       <Name>Giraffenpark.Authentication.Domain</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Giraffenpark.Business.DataServices\Giraffenpark.Infrastructure.AuthenticationServices.Sql.csproj">
-      <Project>{ca302152-6f32-424d-8a7f-679ce3664293}</Project>
-      <Name>Giraffenpark.Infrastructure.AuthenticationServices.Sql</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Giraffenpark.Infrastructure.AuthenticationServices\Giraffenpark.Infrastructure.AuthenticationServices.csproj">
       <Project>{611230BE-F4E5-4EDC-A140-FA18AA87EB1F}</Project>
       <Name>Giraffenpark.Infrastructure.AuthenticationServices</Name>

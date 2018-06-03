@@ -1,4 +1,5 @@
-﻿using Giraffenpark.Business.DataServices;
+﻿using Giraffenpark.Business.AuthenticationServices;
+using Giraffenpark.Business.DataServices;
 using Giraffenpark.Infrastructure.AuthenticationServices;
 using NUnit.Framework;
 
@@ -18,6 +19,12 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
         {
             var model = new AuthenticationDatenModel();
             return model;
+        }
+
+        protected BenutzerAnmeldungService ErzeugeBenutzerAnmeldungService()
+        {
+            var service = new BenutzerAnmeldungService(HoleObjektModell());
+            return service;
         }
     }
 }

@@ -1,3 +1,5 @@
 Aufgabenbeschreibung:
 
 EF Modell =>Erzeuge DB-Tabelle erneut.
+Entkopplung
+Aufwand = Zeit * Anzahl der Stellen, die geändert werden müssen.

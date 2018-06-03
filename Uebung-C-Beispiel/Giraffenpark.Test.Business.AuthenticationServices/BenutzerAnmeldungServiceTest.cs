@@ -1,6 +1,5 @@
 ﻿using System.Linq;
 using Giraffenpark.Authentication.Domain;
-using Giraffenpark.Business.AuthenticationServices;
 using NUnit.Framework;
 
 namespace Giraffenpark.Test.Business.AuthenticationServices
@@ -16,7 +15,7 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
             var nachname = "Meyer";
             var passwort = "IstMirEgal";
 
-            var service = new BenutzerAnmeldungService();
+            var service = ErzeugeBenutzerAnmeldungService();
             var wurdeBenutzerRegistriert = service.BenutzerRegistrieren(benutzername, vorname, nachname, passwort);
             Assert.That(wurdeBenutzerRegistriert, Is.True);
 
@@ -42,7 +41,7 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
         public void TesteBenutzerRegistrierungWennVornameÖzgürDannKeinErfolg(string nichtErlaubterVorname)
         {
             var benutzername = "Hansi";
-            var service = new BenutzerAnmeldungService();
+            var service = ErzeugeBenutzerAnmeldungService();
             var wurdeBenutzerRegistriert = service.BenutzerRegistrieren("Hansi", nichtErlaubterVorname, "Meyer", "IstMirEgal");
             Assert.That(wurdeBenutzerRegistriert, Is.False);
 
@@ -59,7 +58,7 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
             var nachname = "Meyer";
             var passwort = "IstMirEgal";
 
-            var service = new BenutzerAnmeldungService();
+            var service = ErzeugeBenutzerAnmeldungService();
             service.BenutzerRegistrieren(benutzername, vorname, nachname, passwort);
 
             var darfBenutzerSichAnmelden = service.DarfBenutzerAnmelden(benutzername, passwort);
@@ -69,7 +68,7 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
         [Test]
         public void TesteAnmeldungWennDerBenutzerVorherNichtRegistriertDannKeinErfolg()
         {
-            var service = new BenutzerAnmeldungService();
+            var service = ErzeugeBenutzerAnmeldungService();
             var darfBenutzerSichAnmelden = service.DarfBenutzerAnmelden("benutzername", "passwort");
             Assert.That(darfBenutzerSichAnmelden, Is.False);
         }

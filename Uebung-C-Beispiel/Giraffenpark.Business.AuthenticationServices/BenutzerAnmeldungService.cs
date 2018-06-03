@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Linq;
 using Giraffenpark.Authentication.Domain;
-using Giraffenpark.Business.DataServices;
 using Giraffenpark.Infrastructure.AuthenticationServices;
 
 namespace Giraffenpark.Business.AuthenticationServices
@@ -9,9 +8,9 @@ namespace Giraffenpark.Business.AuthenticationServices
     public class BenutzerAnmeldungService : IBenutzerAnmeldungService
     {
         private readonly IDomainObjectRepository _domainObjectRepository;
-        public BenutzerAnmeldungService()
+        public BenutzerAnmeldungService(IDomainObjectRepository domainObjectRepository)
         {
-            _domainObjectRepository = new AuthenticationDatenModel();
+            _domainObjectRepository = domainObjectRepository;
         }
 
         public bool BenutzerRegistrieren(string benutzername, string vorname, string nachname, string passwort)
