@@ -15,27 +15,34 @@ namespace Giraffenpark.Business.AuthenticationServices
 
         public bool BenutzerRegistrieren(string benutzername, string vorname, string nachname, string passwort)
         {
-            if (vorname.Equals("Özgür") == false)
+            if (ReplaceUmlaute(vorname).Equals("Oezguer", StringComparison.InvariantCultureIgnoreCase))
             {
-                var benutzer = new Benutzer();
-                benutzer.Benutzername = benutzername;
-                benutzer.Vorname = vorname;
-                benutzer.Nachname = nachname;
-                benutzer.Passwort = passwort.Trim();
-
-                objektModell.Benutzer.Add(benutzer);
-                objektModell.SaveChanges();
-
-                return true;
+                return false;
             }
 
-            return false;
+            var benutzer = new Benutzer();
+            benutzer.Benutzername = benutzername;
+            benutzer.Vorname = vorname;
+            benutzer.Nachname = nachname;
+            benutzer.Passwort = passwort.Trim();
+
+            objektModell.Benutzer.Add(benutzer);
+            objektModell.SaveChanges();
+
+            return true;
+
         }
 
         public bool DarfBenutzerAnmelden(string benutzerName, string passwort)
         {
             var benutzer = objektModell.Benutzer.SingleOrDefault(bntzer => bntzer.Benutzername.Equals(benutzerName));
             return benutzer?.Passwort.Equals(passwort, StringComparison.Ordinal) ?? false;
+        }
+
+        private static string ReplaceUmlaute(string inputText)
+        {
+            return inputText.Replace("ä", "ae").Replace("ö", "oe").Replace("ü", "ue")
+                .Replace("A", "Ae").Replace("Ö", "Oe").Replace("Ü", "Ue").Replace("ß", "ss");
         }
     }
 }
