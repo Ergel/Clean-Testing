@@ -26,3 +26,5 @@ dass du den Datenzugriffschicht bzw. Datenzugriff per EntityFramework möglich a
 Hilfstellung:
 	- Du kannst mithilfe der Datenbankskripte eine MSSQL Server Datenbank mit einer Benutzer Tabelle anlegen, 
 	  auf die du mithilfe von EntityFramework- zugreifen kannst.
+	- Du kannst mithilfe von Code First Ansatz bei Entity Framework, die Daten von Modell generieren lassen. 
+	https://msdn.microsoft.com/en-us/library/jj193542(v=vs.113).aspx
