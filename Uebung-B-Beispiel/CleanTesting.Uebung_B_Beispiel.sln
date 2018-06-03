@@ -9,8 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Test.Business.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8754EADF-79D1-4365-886C-B9599AFA71A6}"
 	ProjectSection(SolutionItems) = preProject
-		Aufgabenbeschreibung_Uebung_B.txt = Aufgabenbeschreibung_Uebung_B.txt
-		AuthenticationBase.zip = AuthenticationBase.zip
+		Uebung_B_Beispiel_Notizen.txt = Uebung_B_Beispiel_Notizen.txt
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Business.DataServices", "Giraffenpark.Business.DataServices\Giraffenpark.Business.DataServices.csproj", "{CA302152-6F32-424D-8A7F-679CE3664293}"
