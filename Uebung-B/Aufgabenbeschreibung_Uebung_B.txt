@@ -12,16 +12,13 @@ Dabei sind folgende zu beachten:
 	- Wir schreiben Tests für andere, auch für Menschen, die nicht viel Technik-Wissen haben, wie wir.
 	- Test-Code ist auch Code und eine gute Lesbarkeit und Wartbarkeit ist für die Wirtschaflichkeit sehr wichtig.
 
-	- Speichermeidum muss flexible gehalten werden. Wir werden es vielleicht nach einem Jahr ändern.
-	- Persistence-Ignorance ist dir wichtig.
 	- Die Technik ist für dich nur ein Subject to Change!
 	- Codestruktur und Design ändern sich ständig.
 	- Eine teschnische Exzellenz ist nur durch stöndiges Refactoring und Code-Vereinfachung möglich.
 	- Wir haben endlich Zeit. 
 	- Wir schätzen unseren PO's und QS-Experten. Eine gute Zusammenarbeiten ist uns wichtig.
 
-Bitte fokussiere erst auf die automatisierte Entwickler-Tests, danach ändere den Code so, 
-dass du den Datenzugriffschicht bzw. Datenzugriff per EntityFramework möglich abstrahierst.
+Bitte fokussiere erst auf die automatisierte Entwickler-Tests.
 
 Hilfstellung:
 	- Du kannst mithilfe der Datenbankskripte eine MSSQL Server Datenbank mit einer Benutzer Tabelle anlegen, 
