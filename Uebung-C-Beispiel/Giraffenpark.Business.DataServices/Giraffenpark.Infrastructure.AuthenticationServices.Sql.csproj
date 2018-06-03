@@ -61,6 +61,10 @@
       <Project>{37a9c4e7-1819-4649-95db-3cc73dc457a1}</Project>
       <Name>Giraffenpark.Authentication.Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Giraffenpark.Infrastructure.AuthenticationServices\Giraffenpark.Infrastructure.AuthenticationServices.csproj">
+      <Project>{611230be-f4e5-4edc-a140-fa18aa87eb1f}</Project>
+      <Name>Giraffenpark.Infrastructure.AuthenticationServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

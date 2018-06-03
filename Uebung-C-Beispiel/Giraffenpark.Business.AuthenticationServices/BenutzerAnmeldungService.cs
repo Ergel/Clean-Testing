@@ -2,16 +2,16 @@
 using System.Linq;
 using Giraffenpark.Authentication.Domain;
 using Giraffenpark.Business.DataServices;
+using Giraffenpark.Infrastructure.AuthenticationServices;
 
 namespace Giraffenpark.Business.AuthenticationServices
 {
     public class BenutzerAnmeldungService : IBenutzerAnmeldungService
     {
-        private AuthenticationDatenModel objektModell;
+        private readonly IDomainObjectRepository _domainObjectRepository;
         public BenutzerAnmeldungService()
         {
-            //todo: Interface
-            objektModell = new AuthenticationDatenModel();
+            _domainObjectRepository = new AuthenticationDatenModel();
         }
 
         public bool BenutzerRegistrieren(string benutzername, string vorname, string nachname, string passwort)
@@ -21,22 +21,26 @@ namespace Giraffenpark.Business.AuthenticationServices
                 return false;
             }
 
-            var benutzer = new Benutzer();
-            benutzer.Benutzername = benutzername;
-            benutzer.Vorname = vorname;
-            benutzer.Nachname = nachname;
-            benutzer.Passwort = passwort.Trim();
-
-            objektModell.Benutzer.Add(benutzer);
-            objektModell.SaveChanges();
+            ErzeugeRegistriertenBenutzer(benutzername, vorname, nachname, passwort);
 
             return true;
 
         }
 
-        public bool DarfBenutzerAnmelden(string benutzerName, string passwort)
+        private void ErzeugeRegistriertenBenutzer(string benutzername, string vorname, string nachname, string passwort)
         {
-            var benutzer = objektModell.Benutzer.SingleOrDefault(bntzer => bntzer.Benutzername.Equals(benutzerName));
+            var benutzer = _domainObjectRepository.CreateDomainObject<Benutzer>();
+            benutzer.Benutzername = benutzername;
+            benutzer.Vorname = vorname;
+            benutzer.Nachname = nachname;
+            benutzer.Passwort = passwort;
+
+            _domainObjectRepository.PersistDomainObject(benutzer);
+        }
+
+        public bool DarfBenutzerAnmelden(string benutzername, string passwort)
+        {
+            var benutzer = _domainObjectRepository.GetDomainObjects<Benutzer>(bntzer => bntzer.Benutzername.Equals(benutzername)).SingleOrDefault();
             return benutzer?.Passwort.Equals(passwort, StringComparison.Ordinal) ?? false;
         }
 

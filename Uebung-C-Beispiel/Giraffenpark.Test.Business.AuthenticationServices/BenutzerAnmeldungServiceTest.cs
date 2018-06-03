@@ -1,4 +1,5 @@
 ﻿using System.Linq;
+using Giraffenpark.Authentication.Domain;
 using Giraffenpark.Business.AuthenticationServices;
 using NUnit.Framework;
 
@@ -24,7 +25,7 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
             //TODO: Check Anmelden
 
             var objektModell = HoleObjektModell();
-            var registeredBenutzer = objektModell.Benutzer.Single(bntzer => bntzer.Benutzername.Equals(benutzername));
+            var registeredBenutzer = objektModell.GetDomainObjects<Benutzer>(bntzer => bntzer.Benutzername.Equals(benutzername)).SingleOrDefault();
             Assert.That(registeredBenutzer.Benutzername, Is.EqualTo(benutzername));
             Assert.That(registeredBenutzer.Vorname, Is.EqualTo(vorname));
             Assert.That(registeredBenutzer.Nachname, Is.EqualTo(nachname));
@@ -40,13 +41,13 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
         [TestCase("özGüR")]
         public void TesteBenutzerRegistrierungWennVornameÖzgürDannKeinErfolg(string nichtErlaubterVorname)
         {
-            var benutzerName = "Hansi";
+            var benutzername = "Hansi";
             var service = new BenutzerAnmeldungService();
             var wurdeBenutzerRegistriert = service.BenutzerRegistrieren("Hansi", nichtErlaubterVorname, "Meyer", "IstMirEgal");
             Assert.That(wurdeBenutzerRegistriert, Is.False);
 
             var objektModell = HoleObjektModell();
-            var registeredBenutzer = objektModell.Benutzer.SingleOrDefault(bntzer => bntzer.Benutzername.Equals(benutzerName));
+            var registeredBenutzer = objektModell.GetDomainObjects<Benutzer>(bntzer => bntzer.Benutzername.Equals(benutzername)).SingleOrDefault();
             Assert.That(registeredBenutzer, Is.Null);
         }
 

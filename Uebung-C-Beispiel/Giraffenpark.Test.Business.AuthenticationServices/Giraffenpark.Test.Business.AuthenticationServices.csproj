@@ -77,6 +77,10 @@
       <Project>{CA302152-6F32-424D-8A7F-679CE3664293}</Project>
       <Name>Giraffenpark.Infrastructure.AuthenticationServices.Sql</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Giraffenpark.Infrastructure.AuthenticationServices\Giraffenpark.Infrastructure.AuthenticationServices.csproj">
+      <Project>{611230BE-F4E5-4EDC-A140-FA18AA87EB1F}</Project>
+      <Name>Giraffenpark.Infrastructure.AuthenticationServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

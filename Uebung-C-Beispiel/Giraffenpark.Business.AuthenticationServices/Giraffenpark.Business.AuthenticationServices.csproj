@@ -62,6 +62,10 @@
       <Project>{ca302152-6f32-424d-8a7f-679ce3664293}</Project>
       <Name>Giraffenpark.Infrastructure.AuthenticationServices.Sql</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Giraffenpark.Infrastructure.AuthenticationServices\Giraffenpark.Infrastructure.AuthenticationServices.csproj">
+      <Project>{611230BE-F4E5-4EDC-A140-FA18AA87EB1F}</Project>
+      <Name>Giraffenpark.Infrastructure.AuthenticationServices</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

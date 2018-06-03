@@ -1,4 +1,5 @@
 ﻿using Giraffenpark.Business.DataServices;
+using Giraffenpark.Infrastructure.AuthenticationServices;
 using NUnit.Framework;
 
 namespace Giraffenpark.Test.Business.AuthenticationServices
@@ -13,7 +14,7 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
             model.Database.ExecuteSqlCommand("TRUNCATE TABLE BENUTZER");
         }
 
-        protected AuthenticationDatenModel HoleObjektModell()
+        protected IDomainObjectRepository HoleObjektModell()
         {
             var model = new AuthenticationDatenModel();
             return model;
