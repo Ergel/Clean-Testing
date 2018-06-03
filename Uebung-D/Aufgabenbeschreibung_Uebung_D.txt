@@ -1,0 +1,14 @@
+Aufgabenbeschreibung:
+
+Zwei neue Anforderungen sind dazu gekommen:
+	- Der Benutzer darf sein Passwort ändern.
+	- Die Historie der Passwortänderung muss abgefragt werden können.
+
+
+Übrigens, ist nicht funktionale Anforderungen dazu gekommen:
+	- Es darf keine relationale Datenbanken als Speichermedium genutzt werden. 
+	- Als Verfahren wird Event Sourcing genutzt und die Veränderungen der Zustände werden in einem Event-Store persistiert.
+	--Die Ereignisse werden in Vergangenheit formuliert.
+
+Dabei sind folgende zu beachten:
+	- 
