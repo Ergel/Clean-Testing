@@ -16,7 +16,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Infrastructure
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Infrastructure.AuthenticationServices", "Giraffenpark.Infrastructure.AuthenticationServices\Giraffenpark.Infrastructure.AuthenticationServices.csproj", "{611230BE-F4E5-4EDC-A140-FA18AA87EB1F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Authentication.Domain", "..\..\Giraffenpark Clean-B\Giraffenpark.Authentication.Domain\Giraffenpark.Authentication.Domain.csproj", "{37A9C4E7-1819-4649-95DB-3CC73DC457A1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Giraffenpark.Authentication.Domain", "Giraffenpark.Authentication.Domain\Giraffenpark.Authentication.Domain.csproj", "{37A9C4E7-1819-4649-95DB-3CC73DC457A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
