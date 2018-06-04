@@ -6,19 +6,19 @@ die folgendes ermöglichen sollen:
 			Akzeptanzkriterien: Die Menschen, die "Özgür" heißen dürfen nicht registriert werden.
 	- Anmelden eines registrierten Benutzers mit Benutzername und Passwort.
 
-Dabei sind folgende zu beachten:
+Dabei ist folgendes zu beachten:
 	- Wir testen auf Macroebene, fachliche Abläufe müssen abgedeckt werden.
-	- Wir verifizieren, in der erster Linie ob wir das Richtige umgesetzt haben, nicht primär ob wir es richtig umgesetzt haben.
+	- Wir verifizieren, in der erster Linie ob wir das Richtige umgesetzt haben, 
+	  nicht primär ob wir es richtig umgesetzt haben.
 	- Wir schreiben Tests für andere, auch für Menschen, die nicht viel Technik-Wissen haben, wie wir.
-	- Test-Code ist auch Code und eine gute Lesbarkeit und Wartbarkeit ist für die Wirtschaflichkeit sehr wichtig.
+	- Test-Code ist auch Code und eine gute Lesbarkeit und Wartbarkeit ist für die Wirtschaftlichkeit sehr wichtig.
 
 	- Die Technik ist für dich nur ein Subject to Change!
 	- Codestruktur und Design ändern sich ständig.
-	- Eine teschnische Exzellenz ist nur durch stöndiges Refactoring und Code-Vereinfachung möglich.
-	- Wir haben endlich Zeit. 
+	- Eine technische Exzellenz ist nur durch ständiges Refactoring und Code-Vereinfachung möglich. 
 	- Wir schätzen unseren PO's und QS-Experten. Eine gute Zusammenarbeiten ist uns wichtig.
 
-Bitte fokussiere erst auf die automatisierte Entwickler-Tests.
+Bitte fokussiere dich erst auf die automatisierten Entwickler-Tests.
 
 Hilfstellung:
 	- Du kannst mithilfe der Datenbankskripte eine MSSQL Server Datenbank mit einer Benutzer Tabelle anlegen, 
