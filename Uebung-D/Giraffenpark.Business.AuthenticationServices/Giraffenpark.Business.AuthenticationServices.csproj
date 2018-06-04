@@ -54,8 +54,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Giraffenpark Clean-B\Giraffenpark.Authentication.Domain\Giraffenpark.Authentication.Domain.csproj">
-      <Project>{37A9C4E7-1819-4649-95DB-3CC73DC457A1}</Project>
+    <ProjectReference Include="..\Giraffenpark.Authentication.Domain\Giraffenpark.Authentication.Domain.csproj">
+      <Project>{37a9c4e7-1819-4649-95db-3cc73dc457a1}</Project>
       <Name>Giraffenpark.Authentication.Domain</Name>
     </ProjectReference>
     <ProjectReference Include="..\Giraffenpark.Infrastructure.AuthenticationServices\Giraffenpark.Infrastructure.AuthenticationServices.csproj">

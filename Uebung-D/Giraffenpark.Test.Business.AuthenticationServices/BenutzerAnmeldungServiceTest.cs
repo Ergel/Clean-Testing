@@ -21,8 +21,6 @@ namespace Giraffenpark.Test.Business.AuthenticationServices
 
             //TODO: Wie können wir die Registrierung ohne das Ergebnis aus der Methode prüfen? Maske / Daten / Anderer prozess
 
-            //TODO: Check Anmelden
-
             var objektModell = HoleObjektModell();
             var registeredBenutzer = objektModell.GetDomainObjects<Benutzer>(bntzer => bntzer.Benutzername.Equals(benutzername)).SingleOrDefault();
             Assert.That(registeredBenutzer.Benutzername, Is.EqualTo(benutzername));
