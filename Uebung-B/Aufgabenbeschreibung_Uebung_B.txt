@@ -21,5 +21,5 @@ Dabei ist folgendes zu beachten:
 Bitte fokussiere dich erst auf die automatisierten Entwickler-Tests.
 
 Hilfstellung:
-	- Du kannst mithilfe der Datenbankskripte eine MSSQL Server Datenbank mit einer Benutzer Tabelle anlegen, 
-	  auf die du mithilfe von EntityFramework- zugreifen kannst.
+	- Du kannst mit Hilfe der Datenbank-Backup-Datei eine MSSQL Server Datenbank mit einer Benutzer Tabelle anlegen, 
+auf die du mit Hilfe von EntityFramework- zugreifen kannst.
