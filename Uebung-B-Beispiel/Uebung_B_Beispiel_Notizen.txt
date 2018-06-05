@@ -1,16 +1,19 @@
 Aufgabenbeschreibung:
 
-edanken über die Tests hilft und den LErnprozess besser zu gestalten. "Domain Crunching""kopplung sind wichtige Aspekte
-SOLID und hohe Kohesion, Entkopplung
+Gedanken über die Tests hilft und den Lernprozess besser zu gestalten. "Domain Crunching 
+SOLID, hohe Kohesion und Entkopplung sind wichtig.
 
 Akzeptanzkriterien können als Akzeptanztests abgeleitet werden.
 Investiere früh in TestBasis. Test Infrastructure
 Parametrisierte Tests sind dein Freund um einen Testfall mit verschiedenen Datenkonstellationen zu testen.
 
 Denk an negativen Beispielen und Grenzwerte
-
 Code Clone Analysis um Code Dublikaten zu eliminieren.
-
+Trenne Testdaten von SUT
 AAA als Muster
+
+“First, solve the problem. Then, write the code.”
+"Assure that code does what the programmer thinks it should do”
+“If you can't write a test, then you don't know what the code should do”
 
 Realistische Simulationen
