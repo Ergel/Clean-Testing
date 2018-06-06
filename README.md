@@ -19,4 +19,4 @@ Die AuthenticationBase Datenbank muss mit Hilfe von Datenbankbackupdatei 'Authen
 'RestoreAuthenticationDBFromBackupDatei.sql' kann als Hilfe genutzt werden. Bitte beachte, dass du das Skript ggf. vorher angepasst werden muss.
 
 ![alt text](https://github.com/Ergel/Clean-Testing/blob/master/Mein%20bad%20Test-Code%20findet%20mich.jpg)
-Ursprüngliches Build ist hier zu finden:https://generic.de/produkt/clean-code-postkarten/
+Ursprüngliches Biild ist hier zu finden:https://generic.de/produkt/clean-code-postkarten/
